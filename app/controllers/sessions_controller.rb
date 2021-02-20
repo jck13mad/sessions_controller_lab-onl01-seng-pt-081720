@@ -6,7 +6,8 @@ class SessionsController < ApplicationController
     if params[:name].nil? || params[:name].empty?
       redirect_to :login 
     else 
-      session[:name] = 
+      session[:name] = params[:name]
+      
   end 
   
   def destroy
