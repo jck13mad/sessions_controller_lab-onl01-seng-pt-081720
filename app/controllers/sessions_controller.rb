@@ -3,7 +3,8 @@ class SessionsController < ApplicationController
   end
   
   def create 
-    if params[:name].nil? 
+    if params[:name].nil? || params[:name].empty?
+      
   end 
   
   def destroy
